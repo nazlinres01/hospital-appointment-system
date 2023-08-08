@@ -1,27 +1,52 @@
-# HastaneRandevuSistemi
+# Hastane Randevu Sistemi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Bu projede, hastane randevu işlemlerini dijitalleştirmek ve kullanıcıların kolayca randevu almasını sağlamak amacıyla bir web uygulaması geliştirilmiştir.
 
-## Development server
+## Proje Tanımı
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Hastane Randevu Sistemi, hastaların internet üzerinden kolayca randevu almasını ve doktorlar ile polikliniklerin yönetimini sağlayan bir çevrimiçi platformdur. Sistem, kullanıcıların uygun doktor ve poliklinikleri seçerek randevu oluşturmasına olanak tanır.
 
-## Code scaffolding
+## Kullanılan Teknolojiler
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Asp.Net Core 6 MVC (veya Asp.Net Core 7 MVC)
+- C#
+- Veritabanı: SQL Server / PostgreSQL / vb.
+- Entity Framework Core ORM
+- Bootstrap Tema
+- HTML5, CSS3, JavaScript ve jQuery
 
-## Build
+## Özellikler
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Kullanıcı dostu arayüz ile kolayca randevu oluşturma
+- Kullanıcı kaydı ve oturum açma
+- Kullanıcı yetkilendirme ve güvenli giriş
+- Çok dilli destek (Türkçe/İngilizce)
+- Veri tabanındaki verileri sorgulamak için LINQ tabanlı API hizmeti
 
-## Running unit tests
+## Kurulum
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Projeyi klonlayın: `git clone https://github.com/sizin-hesap/ProjeyiAdi.git`
+2. Proje klasörüne gidin: `cd ProjeyiAdi`
+3. `appsettings.json` dosyasında veritabanı bağlantı bilgilerinizi ayarlayın.
+4. Veritabanını güncelleyin: `dotnet ef database update`
 
-## Running end-to-end tests
+## Kullanım
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Uygulamayı başlatın: `dotnet run`
+2. Tarayıcınızda `http://localhost:5000` adresine gidin.
+3. Ana sayfada, kullanıcı kaydı yapın veya oturum açın.
+4. Randevu oluşturmak için uygun doktor ve polikliniği seçin.
+5. Randevu tarih ve saatini belirleyin ve onaylayın.
 
-## Further help
+## Notlar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Admin girişi için kullanıcı adı: OgrenciNuramarasi@sakarya.edu.tr
+- Admin şifresi: sau
+
+## Katkılar
+
+Her türlü katkıya açığız. Lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını okuyun.
+
+## Lisans
+
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
