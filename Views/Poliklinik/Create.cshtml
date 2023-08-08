@@ -1,0 +1,11 @@
+@model HastaneRandevuSistemi.Models.Poliklinik
+
+<h2>Yeni Poliklinik Oluştur</h2>
+
+<form asp-action="PoliklinikKaydet">
+    <div class="form-group">
+        <label asp-for="Isim">İsim</label>
+        <input asp-for="Isim" type="text" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Oluştur</button>
+</form>

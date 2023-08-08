@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>05ef373a-cd1e-40b4-8196-bb6018a62304</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\app\**" />
+    <Content Remove="src\app\**" />
+    <EmbeddedResource Remove="src\app\**" />
+    <None Remove="src\app\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\BirimConller.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\ApplicationUser\Profile.cshtml" />
+  </ItemGroup>
+	
+		
+	
+
+	<ItemGroup>
+	  <None Include="Views\Birim\Create.cshtml" />
+	  <None Include="Views\Birim\Index.cshtml" />
+	  <None Include="wwwroot\images\hastalik1.jpg" />
+	  <None Include="wwwroot\images\hastalik3.jpg" />
+	  <None Include="wwwroot\images\hastalik2.jpg" />
+	  <None Include="wwwroot\images\hastalik4.jpg" />
+	  <None Include="wwwroot\images\hastalik5.jpg" />
+	</ItemGroup>
+
+
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Identity.Client" Version="4.55.0" />
+	</ItemGroup>
+
+
+
+
+	<ProjectExtensions><VisualStudio><UserProperties wwwroot_4lib_4bootstrap_4dist_4css_4bootstrap-grid_1css_1map__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>

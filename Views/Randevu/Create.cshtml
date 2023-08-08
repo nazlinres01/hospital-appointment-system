@@ -1,0 +1,19 @@
+@model HastaneRandevuSistemi.Models.Randevu
+
+<h2>Yeni Randevu Oluştur</h2>
+
+<form asp-action="RandevuKaydet">
+    <div class="form-group">
+        <label asp-for="Date">Tarih</label>
+        <input asp-for="Date" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="HastaId">Hasta Id</label>
+        <input asp-for="HastaId" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DoktorId">Doktor Id</label>
+        <input asp-for="DoktorId" type="number" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Oluştur</button>
+</form>

@@ -1,0 +1,17 @@
+@model Hasta
+
+@{
+    var hastaKayitSistemi = _localization.Getkey("Hasta Kayıt Sistemi");
+    var isimLabel = _localization.Getkey("Isim");
+}
+
+
+<h2>Hasta Kayıt</h2>
+
+<h1>@hastaKayitSistemi</h1>
+<label asp-for="Isim" class="control-label">@_localization.Getkey("Isim")</label>
+<label asp-for="SoyIsim" class="control-label">@_localization.Getkey("Soy İsim")</label>
+<label asp-for="TelefonNumarasi" class="control-label">@_localization.Getkey("Telefon Numarası")</label>
+<label asp-for="Email" class="control-label">@_localization.Getkey("Mail Adresi")</label>
+<label asp-for="DateofBirth" class="control-label">@_localization.Getkey("Doğum Tarihi")</label>
+

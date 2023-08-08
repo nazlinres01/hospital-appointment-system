@@ -1,0 +1,33 @@
+@model List<HastaneRandevuSistemi.Models.ApplicationUser>
+
+  <div class="container mt-3">
+    <h2 class="mb-4">Hasta Yönetimi</h2>
+
+    <a class="btn btn-success mb-3" asp-action="Create">Yeni Hasta Ekle</a>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Başlık</th>
+          <th scope="col">Özet</th>
+          <th scope="col">İşlemler</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (var content in Model)
+            {
+        <tr>
+          <td>@content.UserName</td>
+          <td>@content.Email</td>
+          <td>
+            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@content.Id">Düzenle</a>
+            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@content.Id">Sil</a>
+          </td>
+        </tr>
+            }
+      </tbody>
+    </table>
+  </div>
+
+
+

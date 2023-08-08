@@ -1,0 +1,19 @@
+@model HastaneRandevuSistemi.Models.Hastalik
+
+<h2>Yeni Hastalık Oluştur</h2>
+
+<form asp-action="HastalikKaydet">
+    <div class="form-group">
+        <label asp-for="Isim"></label>
+        <input asp-for="Isim" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Tanim"></label>
+        <input asp-for="Tanim" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Belirti"></label>
+        <input asp-for="Belirti" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Oluştur</button>
+</form>

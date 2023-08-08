@@ -1,0 +1,10 @@
+@model HastaneRandevuSistemi.Models.ApplicationUser
+
+<h2>Kullanıcı Düzenle</h2>
+
+<form method="post" action="@Url.Action("EditUser", "Admin")">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="Username" value="@Model.UserName" />
+    <input type="submit" value="Kaydet" />
+</form>

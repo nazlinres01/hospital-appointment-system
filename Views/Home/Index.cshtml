@@ -1,0 +1,99 @@
+@model IEnumerable<HastaneRandevuSistemi.Models.ApplicationUser>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hastane Randevu Sistemi</title>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Home">Hastane Randevu Sistemi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/Home">@_localization.Getkey("Ana Sayfa")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Randevu">@_localization.Getkey("Randevular")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Hastalik">@_localization.Getkey("Hastalıklar")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doktor">@_localization.Getkey("Doktorlar")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Birim">@_localization.Getkey("Birimler")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Poliklinik">@_localization.Getkey("Poliklinikler")</a>
+                    </li>
+                </ul
+				<div class="d-flex">
+					<a class="btn btn-primary me-2" href="@Url.Action("Login", "ApplicationUser")">@_localization.Getkey("Giriş Yap")</a>
+					<a class="btn btn-primary" href="@Url.Action("Register", "ApplicationUser")">@_localization.Getkey("Kaydol")</a>
+				</div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<style>
+
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+            .nav-link:hover {
+                color: #007bff;
+            }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        /* Custom image styling */
+        .custom-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+<img src="~/images/arkaplan.jpg" alt="Hospital image" class="custom-image" width="676" height="453">
+</html>

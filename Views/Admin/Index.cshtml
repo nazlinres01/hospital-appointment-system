@@ -1,0 +1,28 @@
+@model IEnumerable<HastaneRandevuSistemi.Models.ApplicationUser>
+
+<div class="container mt-3">
+    <h2 class="mb-4">Kullanıcı Yönetimi</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Kullanıcı Adı</th>
+                <th scope="col">Email</th>
+                <th scope="col">İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@user.Id">Düzenle</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@user.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

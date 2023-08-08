@@ -1,0 +1,23 @@
+@model HastaneRandevuSistemi.Models.Doktor
+
+<h2>Doktor Ekle</h2>
+
+<form asp-action="DoktorKaydet">
+    <div class="form-group">
+        <label for="Isim">Isim</label>
+        <input type="text" class="form-control" id="Isim" name="Isim" required>
+    </div>
+    <div class="form-group">
+        <label for="SoyIsim">SoyIsim</label>
+        <input type="text" class="form-control" id="SoyIsim" name="SoyIsim" required>
+    </div>
+    <div class="form-group">
+        <label for="BirimId">Birim Id</label>
+        <input type="number" class="form-control" id="BirimId" name="BirimId" required>
+    </div>
+    <div class="form-group">
+        <label for="PoliklinikId">Poliklinik Id</label>
+        <input type="number" class="form-control" id="PoliklinikId" name="PoliklinikId" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

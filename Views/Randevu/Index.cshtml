@@ -1,0 +1,35 @@
+@model List<HastaneRandevuSistemi.Models.Randevu>
+
+<h2>Randevular</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>HastaId</th>
+            <th>DoktorId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Date</td>
+                    <td>@item.HastaId</td>
+                    <td>@item.DoktorId</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <script>
+                window.location.href = '@Url.Action("Login", "ApplicationUser")';
+            </script>
+        }
+    </tbody>
+
+</table>

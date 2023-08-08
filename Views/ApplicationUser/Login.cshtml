@@ -1,0 +1,72 @@
+@model IEnumerable<HastaneRandevuSistemi.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hastane Randevu Sistemi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Home">Hastane Randevu Sistemi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/Home">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Randevu Al</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Randevu">Randevularım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Hastalik">Hastalıklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doktor">Doktorlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Birim">Birimler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Poliklinik">Poliklinikler</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-primary me-2" href="@Url.Action("Login", "ApplicationUser")">Giriş Yap</a>
+                    <a class="btn btn-secondary" href="@Url.Action("Register", "ApplicationUser")">Kaydol</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
+
+
+<div class="container">
+    <h1 class="my-4">@ViewData["Title"]</h1>
+
+    <form method="post" action="/ApplicationUser/Login">
+        <div class="mb-3">
+            <label for="userName" class="form-label">Kullanıcı Adı</label>
+            <input type="text" class="form-control" id="userName" name="userName" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Şifre</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Giriş</button>
+    </form>
+</div>

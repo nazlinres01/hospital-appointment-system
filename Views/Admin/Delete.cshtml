@@ -1,0 +1,12 @@
+@model HastaneRandevuSistemi.Models.ApplicationUser
+
+<h2>@Model.UserName Sil</h2>
+
+<p>Kullanıcıyı silmek istediğinize emin misiniz?</p>
+
+<form asp-action="DeleteUser">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Evet, Sil</button>
+</form>
+
+<a asp-action="Index">Hayır, İptal</a>
