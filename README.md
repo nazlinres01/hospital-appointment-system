@@ -38,15 +38,3 @@ Hastane Randevu Sistemi, hastaların internet üzerinden kolayca randevu alması
 4. Randevu oluşturmak için uygun doktor ve polikliniği seçin.
 5. Randevu tarih ve saatini belirleyin ve onaylayın.
 
-## Notlar
-
-- Admin girişi için kullanıcı adı: OgrenciNuramarasi@sakarya.edu.tr
-- Admin şifresi: sau
-
-## Katkılar
-
-Her türlü katkıya açığız. Lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını okuyun.
-
-## Lisans
-
-Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
