@@ -38,3 +38,4 @@ Hastane Randevu Sistemi, hastaların internet üzerinden kolayca randevu alması
 4. Randevu oluşturmak için uygun doktor ve polikliniği seçin.
 5. Randevu tarih ve saatini belirleyin ve onaylayın.
 
+
